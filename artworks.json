@@ -1,0 +1,205 @@
+{
+  "title": "우리가 만든 세상, 우리가 채우는 색깔",
+  "subtitle": "친구들이 만든 그림에 색을 칠해 봐요",
+  "version": "20261127",
+  "artworks": [
+    {
+      "id": "art-01",
+      "title": "노래방에서 신나게 노래하는 소년",
+      "category": "나의 모습",
+      "original": "images/original/art-01.jpg",
+      "coloring": "images/coloring/art-01.png",
+      "thumbnail": "images/thumbs/art-01.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-02",
+      "title": "기차 타고 떠나는 즐거운 여행",
+      "category": "나의 모습",
+      "original": "images/original/art-02.jpg",
+      "coloring": "images/coloring/art-02.png",
+      "thumbnail": "images/thumbs/art-02.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-03",
+      "title": "별빛 회전목마와 유니콘",
+      "category": "자유 상상",
+      "original": "images/original/art-03.jpg",
+      "coloring": "images/coloring/art-03.png",
+      "thumbnail": "images/thumbs/art-03.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-04",
+      "title": "숲속 탐험 버스와 퍼즐 놀이",
+      "category": "나만의 친구",
+      "original": "images/original/art-04.jpg",
+      "coloring": "images/coloring/art-04.png",
+      "thumbnail": "images/thumbs/art-04.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-05",
+      "title": "산 위 캠핑장의 라디오",
+      "category": "자유 상상",
+      "original": "images/original/art-05.jpg",
+      "coloring": "images/coloring/art-05.png",
+      "thumbnail": "images/thumbs/art-05.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-06",
+      "title": "우리 집 앞 사과 친구",
+      "category": "나만의 친구",
+      "original": "images/original/art-06.jpg",
+      "coloring": "images/coloring/art-06.png",
+      "thumbnail": "images/thumbs/art-06.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-07",
+      "title": "놀이공원 어드벤처 자동차",
+      "category": "나의 모습",
+      "original": "images/original/art-07.jpg",
+      "coloring": "images/coloring/art-07.png",
+      "thumbnail": "images/thumbs/art-07.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-08",
+      "title": "동물원에서 낮잠 자는 판다",
+      "category": "좋아하는 동물",
+      "original": "images/original/art-08.jpg",
+      "coloring": "images/coloring/art-08.png",
+      "thumbnail": "images/thumbs/art-08.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-09",
+      "title": "바닷속을 헤엄치는 펭귄",
+      "category": "좋아하는 동물",
+      "original": "images/original/art-09.jpg",
+      "coloring": "images/coloring/art-09.png",
+      "thumbnail": "images/thumbs/art-09.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-10",
+      "title": "수정 동굴의 초록 용",
+      "category": "좋아하는 공룡",
+      "original": "images/original/art-10.jpg",
+      "coloring": "images/coloring/art-10.png",
+      "thumbnail": "images/thumbs/art-10.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-11",
+      "title": "식물 가득한 아늑한 거실 소년",
+      "category": "나의 모습",
+      "original": "images/original/art-11.jpg",
+      "coloring": "images/coloring/art-11.png",
+      "thumbnail": "images/thumbs/art-11.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-12",
+      "title": "무지개 위 인어 공주와 동화 성",
+      "category": "자유 상상",
+      "original": "images/original/art-12.jpg",
+      "coloring": "images/coloring/art-12.png",
+      "thumbnail": "images/thumbs/art-12.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-13",
+      "title": "기차를 향해 달리는 소년",
+      "category": "나의 모습",
+      "original": "images/original/art-13.jpg",
+      "coloring": "images/coloring/art-13.png",
+      "thumbnail": "images/thumbs/art-13.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-14",
+      "title": "따뜻한 거실의 독서 시간",
+      "category": "좋아하는 동물",
+      "original": "images/original/art-14.jpg",
+      "coloring": "images/coloring/art-14.png",
+      "thumbnail": "images/thumbs/art-14.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-15",
+      "title": "눈 내린 마을의 꼬마 사신과 별빛 마법 지팡이",
+      "category": "나만의 친구",
+      "original": "images/original/art-15.jpg",
+      "coloring": "images/coloring/art-15.png",
+      "thumbnail": "images/thumbs/art-15.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-16",
+      "title": "달콤한 야외 마켓 피크닉",
+      "category": "좋아하는 음식",
+      "original": "images/original/art-16.jpg",
+      "coloring": "images/coloring/art-16.png",
+      "thumbnail": "images/thumbs/art-16.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-17",
+      "title": "학교 급식실의 딸기 마스코트",
+      "category": "좋아하는 음식",
+      "original": "images/original/art-17.jpg",
+      "coloring": "images/coloring/art-17.png",
+      "thumbnail": "images/thumbs/art-17.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-18",
+      "title": "도서관에서 읽는 용감한 사자 이야기",
+      "category": "자유 상상",
+      "original": "images/original/art-18.jpg",
+      "coloring": "images/coloring/art-18.png",
+      "thumbnail": "images/thumbs/art-18.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-19",
+      "title": "킥보드 타고 달리는 소녀",
+      "category": "나의 모습",
+      "original": "images/original/art-19.jpg",
+      "coloring": "images/coloring/art-19.png",
+      "thumbnail": "images/thumbs/art-19.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-20",
+      "title": "나무 아래 뱀파이어의 퍼즐 놀이",
+      "category": "나만의 친구",
+      "original": "images/original/art-20.jpg",
+      "coloring": "images/coloring/art-20.png",
+      "thumbnail": "images/thumbs/art-20.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-21",
+      "title": "베이커리 버거 파티",
+      "category": "좋아하는 음식",
+      "original": "images/original/art-21.jpg",
+      "coloring": "images/coloring/art-21.png",
+      "thumbnail": "images/thumbs/art-21.jpg",
+      "description": ""
+    },
+    {
+      "id": "art-22",
+      "title": "바닷속에서 웃는 고양이",
+      "category": "좋아하는 동물",
+      "original": "images/original/art-22.jpg",
+      "coloring": "images/coloring/art-22.png",
+      "thumbnail": "images/thumbs/art-22.jpg",
+      "description": ""
+    }
+  ]
+}

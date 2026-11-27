@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#FFF4E6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>우리가 만든 세상, 우리가 채우는 색깔</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 시작 화면 -->
+  <section id="screen-start" class="screen">
+    <div class="start-card">
+      <div class="start-deco" aria-hidden="true">
+        <span style="background:#FF8A80"></span><span style="background:#FFD166"></span><span style="background:#8FD694"></span><span style="background:#7CC6FE"></span><span style="background:#C3A6FF"></span>
+      </div>
+      <h1 id="site-title">우리가 만든 세상,<br />우리가 채우는 색깔</h1>
+      <p id="site-subtitle" class="start-sub">친구들이 만든 그림에 색을 칠해 봐요</p>
+      <div class="start-actions">
+        <a class="btn btn-huge btn-primary" href="#/list" data-icon="play"><span>시작</span></a>
+        <a class="btn btn-big btn-soft" href="#/mine" data-icon="mine"><span>내 작품</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 작품 목록 -->
+  <section id="screen-list" class="screen" hidden>
+    <header class="topbar">
+      <a class="btn btn-icon" href="#/" data-icon="home" aria-label="처음으로"><span>처음</span></a>
+      <h2 class="topbar-title">그림을 골라요</h2>
+      <a class="btn btn-icon" href="#/mine" data-icon="mine" aria-label="내 작품"><span>내 작품</span></a>
+    </header>
+    <nav id="cat-bar" class="cat-bar" aria-label="카테고리"></nav>
+    <main id="art-grid" class="art-grid"></main>
+  </section>
+
+  <!-- 작품 상세 -->
+  <section id="screen-detail" class="screen" hidden>
+    <header class="topbar">
+      <a class="btn btn-icon" href="#/list" data-icon="back" aria-label="목록으로"><span>뒤로</span></a>
+      <h2 class="topbar-title" id="detail-title"></h2>
+      <span class="topbar-spacer"></span>
+    </header>
+    <main class="detail">
+      <div class="detail-pair">
+        <figure class="detail-fig">
+          <img id="detail-original" alt="원본 그림" />
+          <figcaption>원래 그림</figcaption>
+        </figure>
+        <figure class="detail-fig">
+          <img id="detail-coloring" alt="색칠할 그림" />
+          <figcaption>색칠할 그림</figcaption>
+        </figure>
+      </div>
+      <p id="detail-desc" class="detail-desc"></p>
+      <div id="detail-actions" class="detail-actions"></div>
+    </main>
+  </section>
+
+  <!-- 색칠 -->
+  <section id="screen-color" class="screen screen-color" hidden>
+    <header class="topbar topbar-color">
+      <button class="btn btn-icon" id="btn-exit" data-icon="back" aria-label="나가기"><span>나가기</span></button>
+      <h2 class="topbar-title" id="color-title"></h2>
+      <div class="topbar-tools">
+        <button class="btn btn-icon" id="btn-original" data-icon="eye" aria-pressed="false"><span>원본</span></button>
+        <button class="btn btn-icon" id="btn-undo" data-icon="undo" disabled><span>되돌리기</span></button>
+        <button class="btn btn-icon" id="btn-reset" data-icon="reset"><span>처음부터</span></button>
+        <button class="btn btn-icon btn-primary" id="btn-done" data-icon="check"><span>다 했어요</span></button>
+      </div>
+    </header>
+
+    <aside class="tool-bar" id="tool-bar" aria-label="도구">
+      <button class="tool" data-tool="fill" data-icon="bucket" aria-pressed="true"><span>채우기</span></button>
+      <button class="tool" data-tool="brush" data-icon="brush"><span>붓</span></button>
+      <button class="tool" data-tool="eraser" data-icon="eraser"><span>지우개</span></button>
+      <button class="tool" data-tool="magic" data-icon="magic"><span>원본 색</span></button>
+      <div class="size-group" id="size-group" hidden>
+        <button class="size" data-size="0" aria-label="가는 붓"><i style="--d:10px"></i></button>
+        <button class="size" data-size="1" aria-label="보통 붓" aria-pressed="true"><i style="--d:20px"></i></button>
+        <button class="size" data-size="2" aria-label="굵은 붓"><i style="--d:32px"></i></button>
+      </div>
+    </aside>
+
+    <div class="viewport" id="viewport">
+      <div class="stage" id="stage">
+        <canvas id="color-canvas"></canvas>
+        <canvas id="line-canvas"></canvas>
+      </div>
+      <div class="zoom-bar">
+        <button class="btn btn-round" id="btn-zoom-in" data-icon="plus" aria-label="크게"></button>
+        <button class="btn btn-round" id="btn-zoom-out" data-icon="minus" aria-label="작게"></button>
+        <button class="btn btn-round" id="btn-zoom-fit" data-icon="fit" aria-label="화면에 맞추기"></button>
+      </div>
+      <div class="original-peek" id="original-peek" hidden>
+        <img id="peek-img" alt="원본 그림" />
+        <button class="btn btn-round peek-close" id="peek-close" data-icon="x" aria-label="원본 닫기"></button>
+      </div>
+    </div>
+
+    <aside class="palette" id="palette" aria-label="색 고르기"></aside>
+  </section>
+
+  <!-- 완성 -->
+  <section id="screen-done" class="screen" hidden>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+    <main class="done">
+      <h2 class="done-title">멋지게 완성했어요!</h2>
+      <div class="done-frame"><img id="done-img" alt="완성한 그림" /></div>
+      <div class="done-actions">
+        <button class="btn btn-big btn-primary" id="btn-save-png" data-icon="download"><span>그림 저장</span></button>
+        <button class="btn btn-big btn-soft" id="btn-continue" data-icon="brush"><span>더 칠하기</span></button>
+        <a class="btn btn-big btn-soft" href="#/list" data-icon="grid"><span>다른 그림</span></a>
+      </div>
+    </main>
+  </section>
+
+  <!-- 내 작품 -->
+  <section id="screen-mine" class="screen" hidden>
+    <header class="topbar">
+      <a class="btn btn-icon" href="#/" data-icon="home" aria-label="처음으로"><span>처음</span></a>
+      <h2 class="topbar-title">내 작품</h2>
+      <a class="btn btn-icon" href="#/list" data-icon="grid" aria-label="그림 고르기"><span>그림 고르기</span></a>
+    </header>
+    <p class="mine-note">이 기기에만 저장돼요</p>
+    <main id="mine-grid" class="art-grid"></main>
+  </section>
+
+  <!-- 확인 창 -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-msg">
+      <div class="modal-icon" id="modal-icon"></div>
+      <p id="modal-msg"></p>
+      <div class="modal-actions">
+        <button class="btn btn-big btn-soft" id="modal-no" data-icon="x"><span>아니요</span></button>
+        <button class="btn btn-big btn-primary" id="modal-yes" data-icon="check"><span>네</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="loading" id="loading" hidden><div class="spinner"></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
